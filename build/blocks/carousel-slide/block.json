@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "blockbite/carousel-slide",
+  "version": "0.1.0",
+  "title": "Carousel Slide",
+  "category": "blockbite",
+  "icon": "flag",
+  "description": "A slide within the carousel slider.",
+  "usesContext": [
+    "blockbite/swiperEditMode"
+  ],
+  "attributes": {
+    "media": {
+      "type": "object",
+      "default": {
+        "id": 0,
+        "sizes": {},
+        "url": "https://placehold.co/200x200/000000/FFFFFF/png",
+        "alt": "",
+        "type": "",
+        "width": 0,
+        "height": 0
+      }
+    },
+    "anchor": {
+      "type": "string",
+      "default": ""
+    },
+    "metadata": {
+      "type": "object",
+      "default": {
+        "name": "Carousel Slide"
+      }
+    },
+    "flexStyle": {
+      "type": "array",
+      "default": []
+    },
+    "flexClass": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "renaming": true
+  },
+  "textdomain": "blockbite",
+  "editorScript": "file:./index.js"
+}

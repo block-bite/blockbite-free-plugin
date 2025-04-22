@@ -1,0 +1,106 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "blockbite/visual",
+  "version": "0.1.0",
+  "title": "Visual",
+  "category": "blockbite",
+  "icon": "flag",
+  "description": "A visual block",
+  "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "media": {
+      "type": "object",
+      "default": {
+        "id": 0,
+        "sizes": {},
+        "url": "https://www.block-bite.com/placeholder.jpg",
+        "alt": "",
+        "type": "",
+        "width": 0,
+        "height": 0
+      }
+    },
+    "mediaStyle": {
+      "type": "array",
+      "default": []
+    },
+    "mediaClass": {
+      "type": "string",
+      "default": ""
+    },
+    "linkUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "linkTitle": {
+      "type": "string",
+      "default": "Title"
+    },
+    "linkTarget": {
+      "type": "string",
+      "default": "_self"
+    },
+    "lottie": {
+      "type": "object",
+      "default": {
+        "autoplay": {
+          "type": "boolean",
+          "default": true
+        },
+        "hover": {
+          "type": "boolean",
+          "default": false
+        },
+        "loop": {
+          "type": "boolean",
+          "default": true
+        },
+        "playOnScroll": {
+          "type": "boolean",
+          "default": false
+        },
+        "controls": {
+          "type": "boolean",
+          "default": false
+        },
+        "direction": {
+          "type": "number",
+          "default": 0
+        },
+        "parentHover": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "background": true,
+      "text": true
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": false
+    },
+    "align": [
+      "left",
+      "right",
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "blockbite",
+  "editorScript": "file:./index.js"
+}

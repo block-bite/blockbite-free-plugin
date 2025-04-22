@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "blockbite/advanced-button",
+  "version": "0.1.1",
+  "title": "Advanced Button",
+  "allowedBlocks": [
+    "blockbite/button-content",
+    "blockbite/icon"
+  ],
+  "category": "blockbite",
+  "icon": "flag",
+  "description": "Advanced Button with SVG Icon",
+  "attributes": {
+    "linkUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "linkTitle": {
+      "type": "string",
+      "default": "Title"
+    },
+    "linkTarget": {
+      "type": "string",
+      "default": "_self"
+    },
+    "linkTile": {
+      "type": "boolean",
+      "default": false
+    },
+    "linkTextCustom": {
+      "type": "boolean",
+      "default": false
+    },
+    "flexStyle": {
+      "type": "array",
+      "default": []
+    },
+    "flexClass": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonType": {
+      "type": "string",
+      "default": "a"
+    },
+    "buttonIndex": {
+      "type": "number",
+      "default": 0
+    },
+    "biteRef": {
+      "type": "number",
+      "default": null
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "background": true,
+      "text": true
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "justify": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": false
+    },
+    "align": true
+  },
+  "textdomain": "blockbite",
+  "editorScript": "file:./index.js"
+}
