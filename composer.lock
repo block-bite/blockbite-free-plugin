@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bd97a9881e1adf85075cae1a69e7cc2",
+    "content-hash": "28865ed82c7d78a1b7bba3b5c679ba7e",
     "packages": [
         {
             "name": "blockbite/orm",
